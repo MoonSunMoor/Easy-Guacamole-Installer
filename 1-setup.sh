@@ -96,7 +96,7 @@ MYSQL_VERSION=""
 MARIADB_SOURCE_LINK="https://downloads.mariadb.com/MariaDB/mariadb_repo_setup"
 
 # Reverse proxy uses this URL (Guacamole default is http://localhost:8080/guacamole/):
-GUAC_URL=http://localhost:8080/guacamole/
+GUAC_URL=http://localhost:8080/login/
 
 # Get the default route interface IP. May need to manually override this for multi homed systems or where cloud images may use 127.0.x.x
 DEFAULT_IP=$(ip addr show $(ip route | awk '/default/ { print $5 }') | grep "inet" | head -n 1 | awk '/inet/ {print $2}' | cut -d'/' -f1)
