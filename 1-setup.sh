@@ -80,7 +80,7 @@ mkdir -p $DOWNLOAD_DIR
 mkdir -p $DB_BACKUP_DIR
 
 # GitHub download branch
-GITHUB="https://raw.githubusercontent.com/itiligent/Guacamole-Install/main"
+GITHUB="https://raw.githubusercontent.com/MoonSunMoor/Guacamole-Install/main"
 
 # Version of Guacamole to install
 GUAC_VERSION="1.5.5"
@@ -130,10 +130,10 @@ INSTALL_NGINX=""                # Install & configure Nginx reverse proxy http:8
 PROXY_SITE=""                   # Local DNS name for reverse proxy site and/or self signed TLS certificates (blank "" defaults to $DEFAULT_FQDN)
 SELF_SIGN=""                    # Add self signed TLS/https support to Nginx (true/false, Let's Encrypt not available with this option)
 RSA_KEYLENGTH="2048"            # Self signed RSA TLS key length. At least 2048, must not be blank
-CERT_COUNTRY="AU"               # Self signed cert setup, 2 character country code only, must not be blank
-CERT_STATE="Victoria"           # Self signed cert setup, must not be blank
-CERT_LOCATION="Melbourne"       # Self signed cert setup, must not be blank
-CERT_ORG="Itiligent"            # Self signed cert setup, must not be blank
+CERT_COUNTRY="KR"               # Self signed cert setup, 2 character country code only, must not be blank
+CERT_STATE="Seoul"              # Self signed cert setup, must not be blank
+CERT_LOCATION="Seoul"           # Self signed cert setup, must not be blank
+CERT_ORG="MoonSunMoor"          # Self signed cert setup, must not be blank
 CERT_OU="I.T."                  # Self signed cert setup, must not be blank
 CERT_DAYS="3650"                # Self signed cert setup, days until self signed TLS cert expiry, blank = default 3650
 LETS_ENCRYPT=""                 # Add Lets Encrypt public TLS cert for Nginx (true/false, self signed TLS not available with this option) 
